@@ -1,7 +1,7 @@
 #!/bin/bash
 
 export ARCH=arm64
-export PATH=$(pwd)/../PLATFORM/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin:$PATH
+export PATH=$(pwd)/toolchain/gcc-cfp/gcc-cfp-jopp-only/aarch64-linux-android-4.9/bin:$PATH
 
 mkdir out
 
