@@ -25,7 +25,7 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
       - name: aarch64 toolchain
-        run: mkdir -p ../PLATFORM/prebuilts/gcc/linux-x86/aarch64 && git clone https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9 ../PLATFORM/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9
+        run: mkdir -p ../PLATFORM/prebuilts/gcc/linux-x86/aarch64 && git clone --branch pie-release https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/ ../PLATFORM/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9
       # Runs a single command using the runners shell
       - name: make kernel for greatqltechn
         run: ./build_kernel.sh
